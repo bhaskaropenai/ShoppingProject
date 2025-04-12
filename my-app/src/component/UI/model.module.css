@@ -1,0 +1,27 @@
+* {
+  color: rgb(255, 255, 255);
+}
+
+.modelBackdroap {
+  height: 100vmax;
+  width: 100vmax;
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.9);
+  z-index: 1;
+}
+.modelContent {
+  z-index: 2;
+  /* background-color: rgb(255, 0, 0); */
+  background-color: #f1f1f1;
+  position: fixed;
+  max-width: 1280px;
+  width: 90%;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  max-height: 750px;
+  height: 50%;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

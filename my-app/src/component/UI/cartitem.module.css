@@ -1,0 +1,50 @@
+.cartimage {
+  /* border: 1px solid green; */
+  height: 100px;
+  width: 100px;
+  mix-blend-mode: darken;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.cartitem {
+  border-bottom: 1px solid gray;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.imgandtitle {
+  /* background-color: lightcoral; */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.othercontrols {
+  /* background-color: lightgreen; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quantitydisplay {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.qtyinput button,
+removeitembtn {
+  border: none;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  .cartitem {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+  .othercontrols {
+    justify-content: start;
+    gap: 3rem;
+  }
+}
